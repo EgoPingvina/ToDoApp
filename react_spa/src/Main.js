@@ -15,7 +15,7 @@ class Main extends Component {
             <div>
             <h1>SPA ToDo App</h1>
             <ul className="header">
-                <li><NavLink to="/">Домой</NavLink></li>
+                <li><NavLink to="/">Главная</NavLink></li>
                 <li><NavLink to="/stuff">Stuff</NavLink></li>
                 <li><NavLink to="/contact">Контакты</NavLink></li>
             </ul>
