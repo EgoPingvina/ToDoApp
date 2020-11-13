@@ -10,23 +10,26 @@ class Home extends Component {
             items: []
         }
 
-    componentDidMount() {
+    componentDidMount()
+    {
         this.getItems();
     }
 
-    getItems = () => {
-        fetch(USERS_API_URL)
-            .then(res => res.json())
-            .then(res => this.setState({ items: res }))
-            .catch(err => console.log(err));
-    }
+    getItems = () =>
+        {
+            fetch(USERS_API_URL)
+                .then(res => res.json())
+                .then(res => this.setState({ items: res }))
+                .catch(err => console.log(err));
+        }
 
-    addUserToState = user => {
-        this.setState(previous => (
-            {
-                items: [...previous.items, user]
-            }));
-    }
+    addUserToState = user =>
+        {
+            this.setState(previous => (
+                {
+                    items: [...previous.items, user]
+                }));
+        }
 
     updateState = (id) => this.getItems();
 
