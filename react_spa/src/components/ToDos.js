@@ -39,7 +39,8 @@ class Home extends Component {
             this.setState({ items: updated })
         }
 
-    render() {
+    render()
+    {
         return <Container style={{ paddingTop: "100px" }}>
             <Row>
                 <Col>
@@ -49,9 +50,9 @@ class Home extends Component {
             <Row>
                 <Col>
                     <DataTable
-                    items={this.state.items}
-                    updateState={this.updateState}
-                    deleteItemFromState={this.deleteItemFromState} />
+                        items={this.state.items}
+                        updateState={this.updateState}
+                        deleteItemFromState={this.deleteItemFromState} />
                 </Col>
             </Row>
             <Row>
