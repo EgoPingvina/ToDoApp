@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { Button } from 'reactstrap';
 
 class ToDoItem extends Component
 {
@@ -7,6 +8,7 @@ class ToDoItem extends Component
         const item = this.props.location.item;
         
         return <div>
+            <Button color="secondary" onClick={this.props.history.goBack}>Назад</Button>
             <h2>Просмотр конкретного элемента</h2>
             <p>Идентификатор {item.id}</p>
             <p>Имя {item.name}</p>
